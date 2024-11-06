@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Timetable generator</h1>
+        <h2>Template</h2>
+        <form method="get" action="http://localhost:5000/download_template">
+            <input type="submit" value="Download template" />
+        </form>
+        <h2>Upload timetable spec</h2>
+        <form method="post" action="http://localhost:5000/generate_timetable">
+            <p><input type="file"/></p>
+            <p><input type="submit" value="Generate" /></p>
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,12 @@
+function checkFeasibility(spec):
+    for mod in range(spec.module_count):
+        num_taking = number of students taking mod
+
+        for room_type in ["lec", "sem", "lab"]:
+            valid_rooms = all [room_type] rooms + 'sem' rooms if room_type is 'lec'
+            total_capacity = sum([spec.capacities[room] for room in valid_rooms])
+
+            if total_capacity < num_taking:
+                raise Exception
+            elif min([len(selec) for selec in searchRoomCombs(valid_rooms, num_taking)]) > len(spec.module_to_lecutrers[mod]):
+                raise Exception
